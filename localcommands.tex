@@ -1,0 +1,105 @@
+\AffiliationsWithoutIndexing{}
+
+\babelfont[armenian]{rm}[Scale=0.8, Script=Armenian]{DejaVuSans.ttf}
+
+\newfontfamily\hy[Scale = 0.8, Script = Armenian]{DejaVuSans.ttf}
+\newcommand{\armenian}[1]{{\hy #1}}
+\newcommand{\zzzzzzzz}[1]{{\hy #1}}  % this is to force armenian bibliographies to be last + ordered in the bibliography
+
+\newfontfamily\hyg[Scale=MatchLowercase]{NotoSerifArmenian-Regular.ttf}
+\newcommand{\armeniang}[1]{{\hyg #1}} % for rare dialectological symbols
+
+% \newtheorem{adjarianpage}{{Original page number}}
+\newcounter{adjarianpage}
+\newenvironment{adjarianpage}{
+
+\noindent\centering\hrulefill\footnotesize~original page number \refstepcounter{adjarianpage}\theadjarianpage~\hrulefill}{}
+\newcommand{\adjarianpaperpage}[1]{\footnotesize{---Original page number {#1}---}}
+
+\newfontfamily\arabicfont[Script=Arabic,ItalicFont=*,Scale=1.4]{ScheherazadeRegOT_Jazm.ttf}
+\newcommand{\textarab}[1]{{\RL{\arabicfont #1}}}
+
+
+% conrefs
+\newcommand{\translatorHD}[1]{[[\textit{#1}]]}
+
+% conrefs
+\newcommand{\paradigmExplanation}{%
+	\translatorHD{Adjarian placed the entire paradigm of this verb into a single table.  We break it down with a morpheme segmentation and gloss. We contrast the dialectal data against SEA and/or SWA. The morpheme segmentation is my own, based on examining the entire paradigm and contrasting against SEA and/or SWA.}
+ 
+	\translatorHD{Note that this verb is treated as the default type of verb. It is the reflex of the conjugation class that had a theme vowel /e/ in Classical Armenian. This conjugation class is also the default class in SEA and SWA. Philological work calls it the first class; a more mnemonic name is  the E-Class.}}
+
+\newcommand{\paradigmExplanationAClass}{%
+	\translatorHD{Adjarian placed the entire paradigm of this verb into a single table.  We break it down with a morpheme segmentation and gloss. We contrast against SEA and/or SWA. The morpheme segmentation is my own, based on examining the entire paradigm and contrasting against SEA and/or SWA.}
+ 
+	\translatorHD{This verb is the reflex of the conjugation class that had a theme vowel /ɑ/ in Classical Armenian. Philological work calls it the third class; a more mnemonic name is  the A-Class. }}
+
+\newcommand{\litoverview}{%
+	\translatorHD{I do not translate or give bibliography entries for these sources because they are rather difficult to systematically track down. Adjarian does not usually state whether these manuscripts \textit{analyze} the dialect (such as a grammar or dictionary) or  simply \textit{use} the dialect (such as a play script).}
+}
+
+
+\newcommand{\sampleoverview}{%
+	\translatorHD{I do not translate, gloss, or re-transcribe the text samples. Some of them are given in orthography, and not the Armenian dialectological transcription. Because I do not speak this dialect, then I cannot understand the text samples well enough to translate or annotate. In some cases, the printed letter was unclear so I rendered it as `X'.}}
+
+
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\dist}{\textsc{dist}}
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\nom}{\textsc{nom}}
+\newcommand{\acc}{\textsc{acc}}
+\newcommand{\gen}{\textsc{gen}}
+\newcommand{\dat}{\textsc{dat}}
+\newcommand{\abl}{\textsc{abl}}
+\newcommand{\ins}{\textsc{ins}}
+\newcommand{\locgloss}{\textsc{loc}}
+\newcommand{\defgloss}{\textsc{def}}
+\newcommand{\indf}{\textsc{indf}}
+\newcommand{\obl}{\textsc{obl}}
+\newcommand{\plposs}{\textsc{pl.poss}}
+\newcommand{\prs}{\textsc{prs}}
+\newcommand{\echo}{\textsc{echo}}
+\newcommand{\pst}{\textsc{pst}}
+\newcommand{\impf}{\textsc{impf}}
+\newcommand{\perfect}{\textsc{perf}}
+\newcommand{\perfective}{\textsc{pfv}}
+\newcommand{\imp}{\textsc{imp}}
+\newcommand{\opt}{\textsc{opt}}
+\newcommand{\poss}{\textsc{poss}}
+\newcommand{\infgloss}{\textsc{inf}}
+\newcommand{\ind}{\textsc{ind}}
+\newcommand{\impfcvb}{\textsc{impf.cvb}}
+\newcommand{\perfcvb}{\textsc{perf.cvb}}
+\newcommand{\aux}{\textsc{aux}}
+\newcommand{\thgloss}{\textsc{th}}
+\newcommand{\aor}{\textsc{aor}}
+\newcommand{\deb}{\textsc{deb}}
+\newcommand{\caus}{\textsc{caus}}
+\newcommand{\pass}{\textsc{pass}}
+\newcommand{\agr}{\textsc{agr}}
+\newcommand{\fut}{\textsc{fut}}
+\newcommand{\prox}{\textsc{prox}}
+\newcommand{\proh}{\textsc{proh}}
+\newcommand{\prog}{\textsc{prog}}
+\newcommand{\cn}{\textsc{cn}}
+\newcommand{\sbjv}{\textsc{sbjv}}
+\newcommand{\neggloss}{\textsc{neg}}
+\newcommand{\sptcp}{\textsc{sptcp}}
+\newcommand{\q}{\textsc{q}}
+\newcommand{\eptcp}{\textsc{eptcp}}
+\newcommand{\rptcp}{\textsc{rptcp}}
+\newcommand{\futcvb}{\textsc{fut.cvb}}
+\newcommand{\vx}{\textsc{vx}}
+\newcommand{\nx}{\textsc{nx}}
+\newcommand{\inch}{\textsc{inch}}
+\newcommand{\ptcp}{\textsc{ptcp}}
+\newcommand{\lvgloss}{\textsc{lv}}
+\newcommand{\kase}{\textsc{case}}
+\newcommand{\narr}{\textsc{narr}}
+\newcommand{\possFsg}{\textsc{poss.1sg}}	%possessive 1sg
+\newcommand{\possSsg}{\textsc{poss.2sg}}	%possessive 1sg
+\newcommand{\dimgloss}{\textsc{dim}}
+\newcommand{\pro}{\textsc{pro}}
+
+
+\newcommand{\adjbox}[5]{\noindent\parbox[t]{3cm}{\raggedright\small#1}\parbox[t]{3cm}{\raggedright\small#2}\parbox[t]{2.5cm}{\raggedright\small#3}\parbox[t]{2.5cm}{\raggedright\small#4}\parbox[t]{1.5cm}{\raggedright\small#5}\smallskip}

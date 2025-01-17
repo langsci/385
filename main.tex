@@ -1,0 +1,58 @@
+% !TeX document-id = {c361a150-2cfc-4aca-b3ec-b8db4cf93874}
+% !TeX TXS-program:bibliography = txs:///biber
+% !TeX program = xelatex
+\documentclass[output=book,collection,
+%                colorlinks,
+%                citecolor=brown,
+%                 draft,
+%                draftmode,
+               ]{langscibook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%          additional packages                 %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{localmetadata.tex}
+\input{localpackages.tex}
+\input{localhyphenation.tex}
+\input{localcommands.tex}
+\addbibresource{localbibliography.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Frontmatter                      %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \includeonly{chapters/names}
+\begin{document}
+\maketitle
+\frontmatter
+\currentpdfbookmark{Contents}{name} % adds a PDF bookmark
+%\setcounter{tocdepth}{5} % need approval for this
+{\sloppy\tableofcontents}
+\include{chapters/acknowledgments}
+\include{chapters/abbreviations}
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Chapters                         %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\part{Introduction to the translation}
+\includepaper{chapters/conventions}
+\includepaper{chapters/adjarian1899fixed}
+\includepaper{chapters/vaux}
+
+% Translated work
+\include{chapters/intro}
+\include{chapters/um}
+\include{chapters/ke}
+\include{chapters/el}
+
+\part{Adjarian's end matter}
+\includepaper{chapters/names}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%             Backmatter                       %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \input{localseealso.tex}
+% % There is normally no need to change the backmatter section
+\sloppy
+\input{backmatter.tex}
+\end{document}
